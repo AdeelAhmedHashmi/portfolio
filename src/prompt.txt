@@ -1,0 +1,258 @@
+(Backend-First Portfolio • Clean Architecture • Scalable Design System)
+
+ROLE & MINDSET
+
+You are a senior software architect and product engineer building a production-ready personal portfolio for a backend-focused developer with strong frontend literacy.
+
+This is not a landing page.
+This is a scalable system that could evolve into:
+
+a blog platform
+
+a case-study hub
+
+a SaaS marketing site
+
+a documentation portal
+
+Every decision must favor clean architecture, separation of concerns, and future extensibility.
+
+PRIMARY GOAL
+
+Build a backend-developer-centric portfolio that:
+
+Positions the developer as backend-first
+
+Demonstrates system design thinking
+
+Shows frontend skill as an enabler, not the core identity
+
+Uses Tailwind CSS + shadcn/ui correctly
+
+Is componentized, composable, and scalable
+
+Follows clean architecture principles
+
+TECH STACK (STRICT)
+
+Framework: React (modern, functional components)
+
+Styling: Tailwind CSS (utility-first, no random colors)
+
+UI System: shadcn/ui
+
+Theme System: CSS variables as design tokens
+
+Routing: File-based or modern router
+
+No inline styles
+
+No global CSS except design tokens
+
+No hardcoded colors, spacing, or fonts
+
+DESIGN SYSTEM REQUIREMENTS
+1. Theme & Tokens
+
+Centralized CSS variables for:
+
+Backgrounds
+
+Surfaces
+
+Text (primary / secondary / muted)
+
+Accent colors
+
+Borders & rings
+
+Tailwind utilities must consume tokens via var(--token)
+
+Ready for light/dark mode without refactoring
+
+2. shadcn/ui Usage
+
+Use shadcn components as primitives
+
+Extend them via composition, not modification
+
+Examples:
+
+Button → PrimaryActionButton
+
+Card → ProjectCard
+
+Badge → TechStackBadge
+
+ARCHITECTURE (MANDATORY)
+
+Use a clean, layered architecture:
+
+/app or /src
+  /core        → domain logic, constants, config
+  /data        → static data, API mocks, adapters
+  /features    → feature-based modules
+  /components  → reusable UI primitives
+  /layouts     → page scaffolding
+  /pages       → route-level pages
+  /styles      → theme tokens only
+
+
+Rules:
+
+UI components contain no business logic
+
+Pages only compose features
+
+Features encapsulate intent (Projects, Skills, Experience)
+
+Data is separated from presentation
+
+CONTENT STRUCTURE
+HERO SECTION
+
+Identity: Backend Developer
+
+Messaging focused on:
+
+APIs
+
+Scalability
+
+Real-time systems
+
+Distributed architecture
+
+Frontend mentioned as supporting capability
+
+ABOUT SECTION
+
+System-thinking narrative
+
+Emphasis on:
+
+Backend architecture
+
+Performance
+
+Reliability
+
+Clean code
+
+SKILLS SECTION (CRITICAL)
+
+Split clearly into:
+
+Backend (Primary)
+
+Node.js
+
+NestJS
+
+Databases
+
+Messaging
+
+Caching
+
+Auth
+
+System design
+
+Frontend (Secondary)
+
+React
+
+Tailwind
+
+UI architecture
+
+Performance basics
+
+This hierarchy must be visually obvious.
+
+PROJECTS SECTION (CASE-STUDY STYLE)
+
+Each project must show:
+
+Problem
+
+Backend architecture
+
+Tech choices
+
+Tradeoffs
+
+Scalability considerations
+
+UI is clean, minimal, documentation-style.
+
+CONTACT SECTION
+
+Professional, minimal
+
+Signals seriousness (not flashy)
+
+UX & VISUAL DIRECTION
+
+Dark, technical, calm
+
+Developer-tool aesthetic
+
+Inspired by:
+
+Documentation sites
+
+Cloud dashboards
+
+API platforms
+
+No flashy animations
+
+Motion only where it adds clarity
+
+CODE QUALITY RULES
+
+Strong naming conventions
+
+No god components
+
+No prop drilling abuse
+
+Composable layouts
+
+Reusable feature modules
+
+Easy to add:
+
+Blog
+
+Auth
+
+CMS
+
+Analytics
+
+OUTPUT EXPECTATION
+
+Generate:
+
+Full folder structure
+
+Core layout components
+
+Theme system
+
+Key pages
+
+Feature modules
+
+Example shadcn integrations
+
+Clean, readable JSX
+
+Scalable Tailwind usage
+
+This must feel like:
+
+“This developer builds systems, not just pages.”
